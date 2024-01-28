@@ -8589,6 +8589,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "tree-sitter-scala"
+version = "0.20.0"
+source = "git+https://github.com/tree-sitter/tree-sitter-scala?branch=master#45b5ba0e749a8477a8fd2666f082f352859bdc3c"
+dependencies = [
+ "cc",
+ "tree-sitter",
+]
+
+[[package]]
 name = "tree-sitter-scheme"
 version = "0.2.0"
 source = "git+https://github.com/6cdh/tree-sitter-scheme?rev=af0fd1fa452cb2562dc7b5c8a8c55551c39273b9#af0fd1fa452cb2562dc7b5c8a8c55551c39273b9"
@@ -9743,6 +9752,7 @@ dependencies = [
  "tree-sitter-racket",
  "tree-sitter-ruby",
  "tree-sitter-rust",
+ "tree-sitter-scala",
  "tree-sitter-scheme",
  "tree-sitter-svelte",
  "tree-sitter-toml",

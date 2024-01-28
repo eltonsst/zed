@@ -33,6 +33,7 @@ mod uiua;
 mod vue;
 mod yaml;
 mod zig;
+mod scala;
 
 // 1. Add tree-sitter-{language} parser to zed crate
 // 2. Create a language directory in zed/crates/zed/src/languages and add the language to init function below
@@ -118,6 +119,11 @@ pub fn init(
         "zig",
         tree_sitter_zig::language(),
         vec![Arc::new(zig::ZlsAdapter)],
+    );
+    language(
+        "scala",
+        tree_sitter_scala::language(),
+        vec![Arc::new(scala::ScalaLspAdapter)],
     );
     language(
         "heex",
